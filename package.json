@@ -1,0 +1,25 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "an Amazon-like storefront using MySQL, Node.js, Inquirer",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinnyV88/bamazon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinnyV88/bamazon/issues"
+  },
+  "homepage": "https://github.com/VinnyV88/bamazon#readme",
+  "dependencies": {
+    "console.table": "^0.8.0",
+    "inquirer": "^3.0.1",
+    "mysql": "^2.13.0"
+  }
+}
