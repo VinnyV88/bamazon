@@ -89,7 +89,7 @@ function addProduct() {
         connection.query('INSERT INTO products (product_name, department_id, price, stock_quantity) VALUES (?, ?, ?, ?)', [data.prodName, data.id, data.price, data.quan], function(error, results, fields) {
             if (error) throw error;
             console.log("Product added");
-            connection.query('SELECT * from products', [data.id], function(error, results, fields) {
+            connection.query('SELECT * from products', function(error, results, fields) {
                 if (error) throw error;
                 console.table(results);
             });
@@ -104,7 +104,7 @@ inquirer.prompt(
     [{
         type: "list",
         name: "choice",
-        message: "Managers Menu",
+        message: "Manager's Menu",
         choices: ["View Products for Sale", "View Low Inventory", "Add to Inventory", "Add New Product"]
     }]
 ).then(function(data) {
